@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Storyboard</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet"  href="public/css/bootstrap.css" />
+<link rel="stylesheet"  href="public/css/bootstrap-theme.css" />-->
+<link rel="stylesheet"  href="public/css/add_pin.css" />
+<!--<link rel="stylesheet" href="public/css/main.css">
+<link href="public/css/style.css" rel="stylesheet" type="text/css">-->
+<!--<script src="public/js/jquery-1.8.2.min.js"></script>
+<script src="public/js/bootstrap.min.js"></script>-->
+<link rel="stylesheet" href="public/css/profile_setting.css"/>
+<link rel="stylesheet" href="public/css/add_pin.css"/>
+<link rel="stylesheet" href="public/css/autocomplete/select2.css"/>
+<link rel="stylesheet" href="public/css/bootstrap-table/bootstrap-table.css"/>
+<script type="text/javascript" src="public/js/jquery-validation.js" ></script>
+<script type="text/javascript" src="public/js/showplayer.js" ></script>
+<script type="text/javascript" src="public/js/jqueryform.js" ></script>
+<script type="text/javascript" src="public/js/autocomplete/select2.min.js" ></script>
+<script type="text/javascript" src="public/js/bootstrap-table/bootstrap-table.min.js" ></script>
+<script type="text/javascript" src="public/js/bootstrap-table/bootstrap-table-en-US.min.js" ></script>
+ 
+</head>
+<body>
+<div class="modal_pou_up">
+    <div class="add_pin_top_ab3 custom-model add_pin_top">
+        <div class="modal-content">
+            <div class="modal-header gap">
+                <button type="button" class="close_yellow" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <!--  Head  -->
+            <div class="add_pin">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="add_pin_web_site">
+                            <div id="pop_cont">
+                                <h1>Add Category</h1>
+                                <p>&nbsp;</p>
+                                <span style="color:red;" class="brderrmsg"></span>
+                                <form name="category_form" id="category_form" method="post" action="/category_action" enctype="multipart/form-data" onsubmit="$('#add_category').addClass('disable-like');">
+							    <br /><br />
+							    <input placeholder="Category Name" type="text" name="category"  class="inputText" value="" required/>
+							    <br /><br />
+							    <textarea  placeholder="Description" name="description" required  class="inputText"></textarea>
+							    <br /><br />
+							    <input type="file" name="cat_img" id="cat_img" required class="inputText" accept="image/*"/>
+							    <br /><br />
+							    <input type="submit" name="add_category" id="add_category" value="Add" class="submit"/>
+							</form>
+                            </div>
+                            <!--</form>-->
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   // ajax form to validate files
+   $('#category_form').ajaxForm({
+        beforeSend: function(){
+         	$('.loader').show();  
+       	},
+        success:function(data) { 
+            if(data.error==1){
+                $(".brderrmsg").html(data.msg);
+            } else {
+                $('#myModal7').modal('hide');
+                location.href = '/categories';
+            }
+        },
+        error: function(e){
+            $(".brderrmsg").html(e);
+        },
+         complete: function(jqxhr, status, error) {
+            $('.loader').hide(); 
+           	$('#add_category').removeClass('disable-like');  
+        }
+    }); 
+    $("#add_category").click(function(){
+        $("#category_form").validate();        
+    });
+</script>
+
+</body>
+</html>

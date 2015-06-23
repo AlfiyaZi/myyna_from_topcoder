@@ -1,0 +1,2697 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="public/css/ie8-and-down.css" />
+<![endif]-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Storyboard</title>
+
+        <meta property="og:type" content="og:product" />
+        <meta property="og:title" content="CubetboardV2" />
+        
+        
+        
+
+        <meta name="description" content="Myyna pinterest clone">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!--[if lt IE 9]>
+               <link rel="stylesheet" type="text/css" href="public/css/ie8-and-down.css" />
+        <![endif]-->
+        <!--<link rel="stylesheet" href="../mplayer/css/style1.css.html" media="screen" />-->
+        <link rel="stylesheet" href="public/css/bootstrap.css"/>
+<link rel="stylesheet" href="public/css/bootstrap-theme.css"/>
+<link rel="stylesheet" href="public/css/stylesheet.css"/>
+<link rel="stylesheet" href="public/css/flexslider.css"/>
+<link rel="stylesheet" href="public/css/style.css"/>
+<link rel="stylesheet" href="public/css/main.css"/>
+<link rel="stylesheet" href="public/css/video-js.css"/>
+<link rel="stylesheet" href="public/css/boaard.css"/>
+<link rel="stylesheet" href="public/css/mediaelementplayer.min.css"/>
+<link rel="stylesheet" href="public/css/profile_setting.css"/>
+<link rel="stylesheet" href="public/css/add_pin.css"/>
+<script type="text/javascript" src="public/js/jquery-1.8.2.min.js" ></script>
+<script type="text/javascript" src="public/js/vendor/modernizr-2.6.2.min.js" ></script>
+<script type="text/javascript" src="public/js/bootstrap.min.js" ></script>
+<script type="text/javascript" src="public/js/jquery.flexslider.js" ></script>
+<script type="text/javascript" src="public/js/plugins.js" ></script>
+<script type="text/javascript" src="public/js/video.js" ></script>
+<script type="text/javascript" src="public/js/pincreation.js" ></script>
+<script type="text/javascript" src="public/js/mediaelement-and-player.min.js" ></script>
+
+<!--        <link rel="chrome-webstore-item"
+    href="https://chrome.google.com/webstore/detail/iocdfiikhpcdejdpbkpnfnchjdmcianf"/>-->
+        <link rel="stylesheet" href="public/css/loader.css" />
+        <link rel="stylesheet" href="public/css/fontello.css" />
+        <script type="text/javascript" src="public/js/jquery.masonry.min.js"></script>	
+        <script src="public/js/jquery.nicescroll.min.js"></script>
+        <script src="public/js/jquery-validation.js"></script>
+
+        <script>
+            videojs.options.flash.swf = "/default/js/video-js.swf"
+        </script>
+        <script type="text/javascript" src="public/js/imagesloaded.pkgd.min.js"></script>	
+    </head>
+    <body>
+    <!-- HEADER BEGIN-->
+    
+    <header class="navbar navbar-default navbar-fixed-top nav_mob ">
+    <div class="row">
+            <div class="col-md-4 cubet_search_main"> <a href="javascript:;" class="menu_btn"></a>
+        
+            <!-- 
+            <div class="col-md-6 col-md-offset-1 cubet_search">   <div class="input-group search-new">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+              </div></div>-->
+    
+        
+    
+            </div>
+            <div class="col-md-4 cubet_board"><a href="pins_logged.html" class="logo"><img src="public/images/site-logo.png" ></a></div>
+    <!--        <a id="firefox_extention" href="http://crossrider.com/download/51244">firefox</a>
+            <button onclick="chrome.webstore.install()" id="chrome_extention">Add to Chrome</button>-->
+    <!--        <a id="chrome_extention" href="javascript:void(0)" onclick="chrome.webstore.install()">Add to Chrome</a>-->
+            <div class="col-mb-4 cubet_pin_main"><ul class="nav navbar-nav navbar-right right-dropd"> 
+            <li class="dropdown right-drop-down cubet_plus">
+             <a href="" class="dropdown-toggle right-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span></a>
+              <ul class="dropdown-menu">
+                  <li><a href="addpin.html" data-toggle="modal" data-target="#myModal2" id="addpin">Add Pin</a></li>
+                <li><a href="mostrepin_logged.html" >Most Repinned</a></li>
+                <li><a href="mostlike_logged.html"  >Most Liked</a></li>
+                <li><a href="addcategory.html" data-toggle="modal" data-target="#myModal7" >Create Category</a></li>
+                <li><a href="addboard.html" data-toggle="modal" data-target="#myModal4" >Create Board</a></li>
+                <li><a href="boards_logged.html"   >List Boards</a></li>
+                <li><a href="categories_logged.html"   >List Categories</a></li>
+                
+              </ul>
+            </li>
+            
+            <li class="dropdown right-drop-down cubet_name"> <a href="javascript:;" class="dropdown-toggle profile-toggle-list" data-toggle="dropdown">
+            
+            <span><img width="30" height="30"  src="public/images/profile-pic.png" ></span>
+            <span class="user-info">ahmad</span>
+            </a>
+              <ul class="dropdown-menu user_add_drop">
+                  <li><a   href="user_profile_logged.html">Profile</a></li>
+                <li><a  data-target="#myModal3" data-toggle="modal" href="settings.html">Settings</a></li>           
+                <li><a id="logoutButton" href="landing.html">Logout</a></li>
+              </ul>
+             
+            </li>
+            <li class="dropdown right-drop-down cubet_commment"> <a id="comment_display"  href="" class="dropdown-toggle notify" data-toggle="dropdown">
+          <span id="comment_section"  class="glyphicon   glyphicon-comment "></span></a>
+              <ul class="dropdown-menu cubet_comment_sub">
+             <li><a id="new_notify" href=""> No new notifications</a></li>
+                
+              
+              </ul>
+            </li>
+          </ul></div>
+          
+      </div>
+          
+    </header>
+    
+    <div id="menu">
+    
+    <a href="javascript:;" class="close"></a>
+    <ul>
+    <li class="active"><a href="pins_logged.html">Home</a></li>
+    </ul>
+    <ul class="nav_scoll">
+    
+    <li><a href="category_details_logged.html">Category-2</a></li>
+    
+    <li><a href="category_details_logged.html">Category-10</a></li>
+    
+    <li><a href="category_details_logged.html">Category-4</a></li>
+    
+    <li><a href="category_details_logged.html">Category-12</a></li>
+    
+    <li><a href="category_details_logged.html">Category-0</a></li>
+    
+    <li><a href="category_details_logged.html">Category-8</a></li>
+    
+    <li><a href="category_details_logged.html">Category-6</a></li>
+    
+    <li><a href="category_details_logged.html">Category-7</a></li>
+    
+    <li><a href="category_details_logged.html">Category-3</a></li>
+    
+    <li><a href="category_details_logged.html">Category-1</a></li>
+    
+    <li><a href="category_details_logged.html">Category-9</a></li>
+    
+    <li><a href="category_details_logged.html">Category-5</a></li>
+    
+    <li><a href="category_details_logged.html">Category-11</a></li>
+    
+    <li><a href="category_details_logged.html">Category-14</a></li>
+    
+    <li><a href="category_details_logged.html">Category-13</a></li>
+    
+    <li></li>
+    </ul>
+    </div>
+    
+    <!-- HEADER END -->
+    <div id="container" class="cont-fixed">
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b6e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-107.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 107</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b6e" onclick="boardFollow('5574606bfce885ab59fe0b6e','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b69" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-104.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 104</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b69" onclick="boardFollow('5574606bfce885ab59fe0b69','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b6c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-108.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 108</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b6c" onclick="boardFollow('5574606bfce885ab59fe0b6c','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b6d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-103.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 103</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b6d" onclick="boardFollow('5574606bfce885ab59fe0b6d','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b66" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-100.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 100</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b66" onclick="boardFollow('5574606bfce885ab59fe0b66','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b67" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-99.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 99</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b67" onclick="boardFollow('5574606bfce885ab59fe0b67','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b68" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-105.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 105</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b68" onclick="boardFollow('5574606bfce885ab59fe0b68','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b6b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-101.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 101</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b6b" onclick="boardFollow('5574606bfce885ab59fe0b6b','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b6f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-106.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 106</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b6f" onclick="boardFollow('5574606bfce885ab59fe0b6f','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606bfce885ab59fe0b6a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-102.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 102</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606bfce885ab59fe0b6a" onclick="boardFollow('5574606bfce885ab59fe0b6a','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b5f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-97.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 97</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b5f" onclick="boardFollow('5574606afce885ab59fe0b5f','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b65" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-98.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 98</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b65" onclick="boardFollow('5574606afce885ab59fe0b65','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b60" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-94.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 94</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b60" onclick="boardFollow('5574606afce885ab59fe0b60','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b62" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-93.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 93</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b62" onclick="boardFollow('5574606afce885ab59fe0b62','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b63" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-95.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 95</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b63" onclick="boardFollow('5574606afce885ab59fe0b63','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b64" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-89.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 89</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b64" onclick="boardFollow('5574606afce885ab59fe0b64','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b5c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-90.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 90</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b5c" onclick="boardFollow('5574606afce885ab59fe0b5c','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b5e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-96.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 96</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b5e" onclick="boardFollow('5574606afce885ab59fe0b5e','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b61" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-91.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 91</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b61" onclick="boardFollow('5574606afce885ab59fe0b61','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b5d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-92.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 92</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b5d" onclick="boardFollow('5574606afce885ab59fe0b5d','55746063fce885ab59fe0aa5')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b59" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-88.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 88</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b59" onclick="boardFollow('5574606afce885ab59fe0b59','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b5a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-86.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 86</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b5a" onclick="boardFollow('5574606afce885ab59fe0b5a','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_5574606afce885ab59fe0b5b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-87.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 87</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_5574606afce885ab59fe0b5b" onclick="boardFollow('5574606afce885ab59fe0b5b','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b52" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-85.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 85</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b52" onclick="boardFollow('55746069fce885ab59fe0b52','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b55" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-81.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 81</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b55" onclick="boardFollow('55746069fce885ab59fe0b55','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b51" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-78.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 78</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b51" onclick="boardFollow('55746069fce885ab59fe0b51','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b53" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-77.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 77</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b53" onclick="boardFollow('55746069fce885ab59fe0b53','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b56" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-83.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 83</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b56" onclick="boardFollow('55746069fce885ab59fe0b56','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b57" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-82.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 82</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b57" onclick="boardFollow('55746069fce885ab59fe0b57','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b54" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-84.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 84</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b54" onclick="boardFollow('55746069fce885ab59fe0b54','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b58" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-79.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 79</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b58" onclick="boardFollow('55746069fce885ab59fe0b58','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b50" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-80.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 80</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b50" onclick="boardFollow('55746069fce885ab59fe0b50','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b4a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-75.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 75</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b4a" onclick="boardFollow('55746069fce885ab59fe0b4a','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b4f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-74.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 74</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b4f" onclick="boardFollow('55746069fce885ab59fe0b4f','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b49" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-70.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 70</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b49" onclick="boardFollow('55746069fce885ab59fe0b49','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b4b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-71.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 71</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b4b" onclick="boardFollow('55746069fce885ab59fe0b4b','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b4c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-72.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 72</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b4c" onclick="boardFollow('55746069fce885ab59fe0b4c','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b4e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-76.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 76</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b4e" onclick="boardFollow('55746069fce885ab59fe0b4e','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746069fce885ab59fe0b4d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-73.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 73</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746069fce885ab59fe0b4d" onclick="boardFollow('55746069fce885ab59fe0b4d','55746063fce885ab59fe0aa3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b48" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-68.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 68</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b48" onclick="boardFollow('55746068fce885ab59fe0b48','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b46" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-69.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 69</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b46" onclick="boardFollow('55746068fce885ab59fe0b46','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b47" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-67.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 67</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b47" onclick="boardFollow('55746068fce885ab59fe0b47','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b42" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-66.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 66</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b42" onclick="boardFollow('55746068fce885ab59fe0b42','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b44" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-65.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 65</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b44" onclick="boardFollow('55746068fce885ab59fe0b44','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b43" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-62.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 62</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b43" onclick="boardFollow('55746068fce885ab59fe0b43','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b45" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-63.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 63</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b45" onclick="boardFollow('55746068fce885ab59fe0b45','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746068fce885ab59fe0b41" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-64.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 64</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746068fce885ab59fe0b41" onclick="boardFollow('55746068fce885ab59fe0b41','55746063fce885ab59fe0aa9')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b39" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-60.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 60</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b39" onclick="boardFollow('55746067fce885ab59fe0b39','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b38" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-61.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 61</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b38" onclick="boardFollow('55746067fce885ab59fe0b38','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b37" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-53.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 53</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b37" onclick="boardFollow('55746067fce885ab59fe0b37','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b3a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-58.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 58</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b3a" onclick="boardFollow('55746067fce885ab59fe0b3a','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b3d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-57.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 57</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b3d" onclick="boardFollow('55746067fce885ab59fe0b3d','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b3e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-56.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 56</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b3e" onclick="boardFollow('55746067fce885ab59fe0b3e','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b3f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-52.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 52</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b3f" onclick="boardFollow('55746067fce885ab59fe0b3f','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b3b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-54.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 54</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b3b" onclick="boardFollow('55746067fce885ab59fe0b3b','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b3c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-59.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 59</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b3c" onclick="boardFollow('55746067fce885ab59fe0b3c','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b40" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-55.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 55</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b40" onclick="boardFollow('55746067fce885ab59fe0b40','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b2d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-50.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 50</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b2d" onclick="boardFollow('55746067fce885ab59fe0b2d','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b30" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-51.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 51</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b30" onclick="boardFollow('55746067fce885ab59fe0b30','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b33" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-47.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 47</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b33" onclick="boardFollow('55746067fce885ab59fe0b33','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b35" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-46.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 46</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b35" onclick="boardFollow('55746067fce885ab59fe0b35','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b36" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-42.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 42</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b36" onclick="boardFollow('55746067fce885ab59fe0b36','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b31" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-48.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 48</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b31" onclick="boardFollow('55746067fce885ab59fe0b31','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b32" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-43.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 43</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b32" onclick="boardFollow('55746067fce885ab59fe0b32','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b34" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-49.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 49</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b34" onclick="boardFollow('55746067fce885ab59fe0b34','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b2e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-45.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 45</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b2e" onclick="boardFollow('55746067fce885ab59fe0b2e','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746067fce885ab59fe0b2f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-44.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 44</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746067fce885ab59fe0b2f" onclick="boardFollow('55746067fce885ab59fe0b2f','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b29" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-39.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 39</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b29" onclick="boardFollow('55746066fce885ab59fe0b29','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b2c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-40.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 40</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b2c" onclick="boardFollow('55746066fce885ab59fe0b2c','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b27" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-37.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 37</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b27" onclick="boardFollow('55746066fce885ab59fe0b27','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b28" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-41.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 41</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b28" onclick="boardFollow('55746066fce885ab59fe0b28','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b2a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-36.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 36</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b2a" onclick="boardFollow('55746066fce885ab59fe0b2a','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b2b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-38.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 38</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b2b" onclick="boardFollow('55746066fce885ab59fe0b2b','55746063fce885ab59fe0aa4')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b23" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-34.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 34</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b23" onclick="boardFollow('55746066fce885ab59fe0b23','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b25" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-35.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 35</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b25" onclick="boardFollow('55746066fce885ab59fe0b25','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b24" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-32.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 32</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b24" onclick="boardFollow('55746066fce885ab59fe0b24','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b26" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-33.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 33</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b26" onclick="boardFollow('55746066fce885ab59fe0b26','55746063fce885ab59fe0aa8')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b1f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-31.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 31</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b1f" onclick="boardFollow('55746066fce885ab59fe0b1f','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b1a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-27.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 27</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b1a" onclick="boardFollow('55746066fce885ab59fe0b1a','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b1d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-28.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 28</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b1d" onclick="boardFollow('55746066fce885ab59fe0b1d','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b1e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-29.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 29</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b1e" onclick="boardFollow('55746066fce885ab59fe0b1e','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b21" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-23.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 23</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b21" onclick="boardFollow('55746066fce885ab59fe0b21','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b1b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-24.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 24</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b1b" onclick="boardFollow('55746066fce885ab59fe0b1b','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b1c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-25.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 25</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b1c" onclick="boardFollow('55746066fce885ab59fe0b1c','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b22" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-30.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 30</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b22" onclick="boardFollow('55746066fce885ab59fe0b22','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746066fce885ab59fe0b20" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-26.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 26</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746066fce885ab59fe0b20" onclick="boardFollow('55746066fce885ab59fe0b20','55746063fce885ab59fe0ab3')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b12" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-22.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 22</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b12" onclick="boardFollow('55746065fce885ab59fe0b12','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b13" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-14.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 14</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b13" onclick="boardFollow('55746065fce885ab59fe0b13','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b15" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-19.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 19</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b15" onclick="boardFollow('55746065fce885ab59fe0b15','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b19" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-18.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 18</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b19" onclick="boardFollow('55746065fce885ab59fe0b19','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b11" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-15.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 15</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b11" onclick="boardFollow('55746065fce885ab59fe0b11','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b16" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-20.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 20</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b16" onclick="boardFollow('55746065fce885ab59fe0b16','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b14" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-21.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 21</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b14" onclick="boardFollow('55746065fce885ab59fe0b14','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b17" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-17.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 17</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b17" onclick="boardFollow('55746065fce885ab59fe0b17','55746063fce885ab59fe0aaa')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746065fce885ab59fe0b18" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-16.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 16</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746065fce885ab59fe0b18" onclick="boardFollow('55746065fce885ab59fe0b18','55746063fce885ab59fe0ab0')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b0e" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-12.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 12</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b0e" onclick="boardFollow('55746064fce885ab59fe0b0e','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b0b" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-13.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 13</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b0b" onclick="boardFollow('55746064fce885ab59fe0b0b','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b0d" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-8.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 8</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b0d" onclick="boardFollow('55746064fce885ab59fe0b0d','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b08" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-9.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 9</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b08" onclick="boardFollow('55746064fce885ab59fe0b08','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b0f" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-4.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 4</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b0f" onclick="boardFollow('55746064fce885ab59fe0b0f','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b07" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-5.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 5</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b07" onclick="boardFollow('55746064fce885ab59fe0b07','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b09" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-6.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 6</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b09" onclick="boardFollow('55746064fce885ab59fe0b09','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b0a" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-11.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 11</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b0a" onclick="boardFollow('55746064fce885ab59fe0b0a','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b10" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-10.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 10</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b10" onclick="boardFollow('55746064fce885ab59fe0b10','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b0c" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-7.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 7</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b0c" onclick="boardFollow('55746064fce885ab59fe0b0c','55746063fce885ab59fe0ab6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b06" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-2.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 2</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b06" onclick="boardFollow('55746064fce885ab59fe0b06','55746063fce885ab59fe0aa6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b05" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-3.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 3</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b05" onclick="boardFollow('55746064fce885ab59fe0b05','55746063fce885ab59fe0aa6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b03" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-1.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 1</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b03" onclick="boardFollow('55746064fce885ab59fe0b03','55746063fce885ab59fe0aa6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <div class="element clearfix">
+          <div id="myCarousel2_55746064fce885ab59fe0b04" class="carousel slide custom">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+              <a href="board_details_logged.html"><img src="assets/boards/board-0.png"/></a>
+              </div>
+            </div>
+            <!-- Carousel nav --> 
+            <div class="post-content">
+              <a href="board_details_logged.html" class="desc">
+                <div>Board 0</div> 
+              </a>
+            </div>
+            <div class="post-info-inner clearfix">
+              <a href="javascript:void(0)" class="cubt_folw" id="follow_55746064fce885ab59fe0b04" onclick="boardFollow('55746064fce885ab59fe0b04','55746063fce885ab59fe0aa6')">Follow</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+    </div><!-- end id container -->
+    
+    
+    <!-- this part for iframe pop up -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    
+    <!-- this part for iframe pop up for add pins-->
+    <div class="modal fade" id="myModal2" tabindex="0" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    
+    <div class="modal fade" id="myModal3" tabindex="1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    <!-- board -->
+    <div class="modal fade" id="myModal4" tabindex="2" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    <!-- repin -->
+    <div class="modal fade" id="myModal5" tabindex="3" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    
+    <div class="modal fade" id="myModal6" tabindex="4" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    <!-- category -->
+    <div class="modal fade" id="myModal7" tabindex="5" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+    <!-- user management -->
+    <div class="modal fade" id="myModal8" tabindex="6" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    </div>
+            <div class="loader">
+                <img src="public/images/ajax-loader.gif"/>
+            </div>
+    
+        <script type="text/javascript">  
+            $(document).ready(function(){
+    //          if($.browser.mozilla){
+    //           $("#chrome_extention").attr("href", "javascript:;");   
+    //          }
+    //          
+    //           if($.browser.chrome){             
+    //               if (chrome.app.isInstalled) {
+    //  document.getElementById('chrome_extention').style.display = 'none';
+    //}
+    //             $("a#firefox_extention").attr("href", "javascript:;");    
+    //          }
+                modalInit();
+    
+                $('audio').mediaelementplayer();    
+    
+                var mOpts = {
+                    itemSelector : '.element',
+                    isFitWidth: true,
+                    isResizable: true,
+                    gutterWidth: 15,
+                    isAnimated: false,
+                    animationOptions: {
+                        duration: 300,
+                        easing: 'linear',
+                        queue: false
+                    }
+                }
+                
+                
+                    mOpts['columnWidth'] = 300; 
+                
+    
+                $('#container').masonry(mOpts);
+                
+                if ($("#container").length !== 0) {
+                    imagesLoaded( document.querySelector('#container'), function( instance ) {
+                        $('#container').masonry('reload');
+                    });
+                }
+                if ($("#pop_up_container").length !== 0) {
+                    popup_functions();
+                }
+                var tempScrollTop;
+     
+                $('#myModal').on('show.bs.modal', function (e) {
+                    if(!$('html').hasClass('modal-open')){
+                        tempScrollTop = $(window).scrollTop();
+                    }
+                    $('html').addClass('modal-open');
+                    var url =  window.localStorage.getItem('cbt_parenturl') ; 
+                    if(typeof(url)=='undefined' || url==null) {
+                        url = document.URL;
+                    }
+                    expression =/.*\/(?!$)/;
+                    var str = expression.exec($(e.relatedTarget).attr('href'));
+                    window.localStorage.setItem('cbt_parenturl', url);
+                    window.history.pushState({},"", str);
+                    popup_functions();
+                });
+    
+                $('#myModal').on('hide.bs.modal', function () {
+                    $('html').removeClass('modal-open');
+                    $(window).scrollTop(tempScrollTop);
+                    url =  window.localStorage.getItem('cbt_parenturl') ; 
+                    window.history.pushState({},"", url); 
+                    window.localStorage.removeItem('cbt_parenturl');
+                });
+                 
+                if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                    $('body').niceScroll({
+                        zindex: 1030,
+                        horizrailenabled:false
+                    });
+                    $('.nav_scoll').niceScroll();
+                    $('.dropdown-menu.cubet_comment_sub').niceScroll();
+                }
+                
+                if ($("#board_container").length !== 0) {
+                    $('#board_container .row:first').hide().css('visibility', 'visible');
+    
+                    $(window).scroll(function(){
+                        var top = 280;
+    
+                        if ( $(window).width() < 480 ) {
+                            top = 600;
+                        }
+    
+                        var mtop = '480px';
+                        if($(this).scrollTop() > top) {
+                            $('#board_container .row:last').css('visibility', 'hidden');
+                            $('#board_container .row:first').slideDown();
+    
+                        }  else {
+                            // $('#container').css('margin-top', '0px');
+                            $('#board_container .row:first').hide();
+                            $('#board_container .row:last').css('visibility', 'visible');
+                        }
+                    });
+                }
+            });
+    
+            
+    
+            $(window).load(function(){
+                $('.dropdown-toggle').dropdown();
+                $('#carousel').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    itemWidth: 100,
+                    itemMargin: 5,
+                    asNavFor: '#slider'
+                });
+    
+                $('#slider').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    sync: "#carousel",
+                    start: function(slider){
+                        $('body').removeClass('loading');
+                    }
+                });
+    
+            });
+    
+            function modalInit(){
+                $('body').on('click', '*[data-toggle="modal"]',function(e){
+                    $('.loader').show();
+                    e.stopPropagation();
+                    e.preventDefault();
+                    var id = $(this).attr('data-target');
+                    var link = $(this).attr('href');
+                    //to handle popups
+                    if($(this).attr('data-extend')){
+                        link += '/'+ $(this).attr('data-extend');
+                    }
+                    
+                    $(id).modal('show').on('hide.bs.modal',function(){
+                        $(this).html('');
+                    }).on('shown.bs.modal', function () {                       
+                        setTimeout("$('.loader').hide();",100);        
+                    });
+                    
+                    $(id).load(link);
+                    
+    
+                    if(id == '#myModal') {
+                        var url =  window.localStorage.getItem('cbt_parenturl') ; 
+                        if(typeof(url)=='undefined' || url==null) {
+                            url = document.URL;
+                        }
+                        expression =/.*\/(?!$)/;
+                        var str = expression.exec(link);
+                        window.localStorage.setItem('cbt_parenturl', url);
+                        window.history.pushState({},"", str);
+                    }
+                });            
+            }
+                   
+            
+            function popup_functions() {
+                var next_scroll = true
+                var scr = $("#myModal");
+    
+                if($("#container").length == 0)
+                {
+                    var scr = $(document) ;
+                }  
+                scr.scroll(function() {
+                    var wintop    = scr.scrollTop(), 
+                    docheight = $(document).height(), 
+                    winheight = $('#pop_up_container').height();
+            
+                    if ( (wintop + $(".modal_pou_up .row").height()) + parseInt(1000) > winheight ) {
+    
+                        if (next_scroll) {
+                            // alert(2);
+                            next_scroll = false;
+                            //$('div#loadmoreajaxloader').show();
+                            var start = $('#endlimit2').val();
+                            var end = parseInt(start) + parseInt(6);
+                            $('#endlimit2').val(end);
+                            //alert($("#cur_pin_id").val());
+    
+                            $.ajax({
+                                url: "/upin_nxtpg",
+                                data: {
+                                    "startlimit": start,
+                                    "endlimit"  : "3",
+                                    //"user_id"   : $("#user_id").val(),
+                                    "cur_pin_id": $("#cur_pin_id").val(),
+                                    "popup"     : $("#popup").val()
+                                },
+                                type: 'post',
+                                success: function(html)
+                                {
+                                    //alert(html);
+                                    if (html){
+                                        var mOptsPop = {
+                                            itemSelector : '.element',
+                                            isFitWidth: true,
+                                            isResizable: true,
+                                            gutterWidth: 15,
+                                            isAnimated: false,
+                                            animationOptions: {
+                                                duration: 300,
+                                                easing: 'linear',
+                                                queue: false
+                                            }
+                                        };
+                                        
+                                        
+                                            mOptsPop['columnWidth'] = 300; 
+                                         
+                                        
+                                        $("#pop_up_container").masonry(mOptsPop);
+                                        $("#pop_up_container").append(html);
+                                        
+                                        $('audio').mediaelementplayer();
+                                        $(".youtubeClass").unbind('click').bind('click',function(){
+                                            //alert(2);
+                                            var vUrl = $(this).children('img.youtube').attr('data-src');        
+                                            $(this).children('iframe').attr('src', vUrl).show();
+                                            $(this).children('img').hide();
+                                        });
+                                        
+                                        imagesLoaded(document.querySelector('#pop_up_container'), function( instance ) {
+                                            $('#pop_up_container').masonry('reload');
+                                            next_scroll = true;
+                                        });
+                                        //$('div#loadmoreajaxloader').hide();
+    
+                                
+                                    } else {
+                                        //$('div#loadmoreajaxloader').html('<center>No more posts to show.</center>');
+                                    }
+                                },
+                                error: function(jqxhr, status, error) {
+                                    //                            alert('e' + error);
+                                    //$('div#loadmoreajaxloader').html('<center>No more posts to show.</center>');
+                                }
+                            });
+                        }
+                    }
+                });
+                            
+                $('#carousel').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    itemWidth: 210,
+                    itemMargin: 5,
+                    asNavFor: '#slider'
+                });
+                $('#slider').flexslider({
+                    animation: "slide",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: false,
+                    sync: "#carousel",
+                    start: function(slider){
+                        $('body').removeClass('loading');
+                    }
+                });
+                
+                $(".youtubeClass").unbind('click').bind('click',function(){
+                    //alert(2);
+                    var vUrl = $(this).children('img.youtube').attr('data-src');        
+                    $(this).children('iframe').attr('src', vUrl).show();
+                    $(this).children('img').hide();
+                });
+    
+                setTimeout(function(){
+                    imagesLoaded(document.querySelector('.boardMasonry'), function( instance ) {
+                            $('.boardMasonry').masonry('reload');
+                        });
+                    $('#myModal').niceScroll();
+                    
+                    if($('.boardMasonry').length > 0) {
+                        imagesLoaded(document.querySelector('.boardMasonry'), function( instance ) {
+                            $('.boardMasonry').masonry('reload');
+                        });   
+                    } 
+                    if($('.domainContainer').length > 0) {
+                        imagesLoaded(document.querySelector('.domainContainer'), function( instance ) {
+                            $('.domainContainer').masonry('reload');
+                        });
+                    }
+                                        
+                    $('.sharegr').hover(function() {
+                        $('.share_popup').hide();
+                        $('.popup_share').show();
+                    }, function() {
+                        $('.popup_share').hide();
+                        $('.share_popup').show();
+                    });
+                    
+                    $('.overflw_sectn').niceScroll({
+                        horizrailenabled: false
+                    });
+                    $('.loader').hide();
+                },800);
+                
+            }
+            
+        </script>
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="../default/js/jquery.placeholder.js"></script>	
+        <![endif]-->
+    </body>
+</html>
